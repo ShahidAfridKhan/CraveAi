@@ -1,0 +1,89 @@
+Item Name,Quantity,Ingredients,Price (INR)
+Spicy Chicken Tikka,200,"Chicken, Yogurt, Spices",₹250
+Creamy Alfredo Pasta,80,"Pasta, Cream, Parmesan",₹420
+Paneer Butter Masala,150,"Paneer, Tomato, Butter",₹380
+spicy chicken,100,"Paneer, Onion, Capsicum",150
+Garlic Naan,200,"Flour, Garlic, Yeast",₹70
+Mutton Biryani,90,"Mutton, Rice, Spices",₹600
+Dal Makhani,180,"Lentils, Cream, Spices",₹320
+Chicken Korma,110,"Chicken, Cashews, Cream",₹450
+Aloo Gobi,160,"Potato, Cauliflower, Spices",₹280
+Prawn Curry,70,"Prawns, Coconut, Spices",₹650
+Masala Dosa,250,"Rice, Lentils, Potato",₹150
+Idli Sambar,300,"Rice, Lentils, Vegetables",₹120
+Roti Basket,170,"Flour, Butter, Ghee",₹180
+Fish Fry,60,"Fish, Spices, Oil",₹500
+Vegetable Pulao,140,"Rice, Vegetables, Spices",₹300
+Mushroom Masala,130,"Mushroom, Tomato, Onion",₹360
+Tandoori Chicken,95,"Chicken, Yogurt, Tandoor",₹480
+Butter Chicken,105,"Chicken, Butter, Tomato",₹490
+Palak Paneer,125,"Spinach, Paneer, Spices",₹370
+Veg Kofta,190,"Vegetables, Cream, Spices",₹340
+Chicken Shawarma,85,"Chicken, Pita, Sauce",₹250
+Falafel Wrap,210,"Chickpeas, Pita, Tahini",₹220
+Hummus Platter,160,"Chickpeas, Tahini, Olive Oil",₹280
+Greek Salad,130,"Lettuce, Feta, Olives",₹300
+Lamb Chops,50,"Lamb, Herbs, Spices",₹750
+Grilled Salmon,40,"Salmon, Lemon, Dill",₹780
+Caesar Salad,150,"Lettuce, Croutons, Parmesan",₹290
+Margherita Pizza,170,"Dough, Tomato, Mozzarella",₹480
+Pepperoni Pizza,110,"Dough, Pepperoni, Cheese",₹580
+BBQ Chicken Pizza,90,"Dough, Chicken, BBQ Sauce",₹620
+Veggie Burger,200,"Patty, Bun, Vegetables",₹280
+Chicken Burger,180,"Chicken, Bun, Lettuce",₹320
+French Fries,250,"Potato, Oil, Salt",₹100
+Onion Rings,220,"Onion, Batter, Oil",₹120
+Coleslaw,190,"Cabbage, Carrot, Mayonnaise",₹90
+Chocolate Brownie,300,"Chocolate, Flour, Sugar",₹180
+Vanilla Ice Cream,400,"Cream, Sugar, Vanilla",₹150
+Strawberry Cheesecake,100,"Cream Cheese, Strawberry, Cracker",₹250
+Gulab Jamun,280,"Milk Solids, Sugar, Cardamom",₹100
+Jalebi,270,"Flour, Sugar, Saffron",₹80
+Rasgulla,290,"Cottage Cheese, Sugar, Rosewater",₹90
+Mango Lassi,350,"Mango, Yogurt, Sugar",₹150
+Sweet Lassi,320,"Yogurt, Sugar, Water",₹120
+Salted Lassi,310,"Yogurt, Salt, Water",₹110
+Fresh Lime Soda,380,"Lime, Sugar, Soda",₹80
+Mint Mojito,200,"Mint, Lime, Soda",₹200
+Watermelon Juice,250,"Watermelon, Sugar, Water",₹180
+Orange Juice,260,"Orange, Sugar, Water",₹190
+Apple Juice,270,"Apple, Sugar, Water",₹170
+Filter Coffee,300,"Coffee, Milk, Sugar",₹70
+Masala Chai,320,"Tea, Milk, Spices",₹60
+Green Tea,250,"Green Tea, Water, Honey",₹90
+Black Coffee,280,"Coffee, Water, Sugar",₹80
+Hot Chocolate,180,"Chocolate, Milk, Sugar",₹220
+Tomato Soup,150,"Tomato, Cream, Herbs",₹180
+Mushroom Soup,140,"Mushroom, Cream, Herbs",₹190
+Sweet Corn Soup,160,"Corn, Vegetables, Broth",₹170
+Manchow Soup,130,"Vegetables, Noodles, Spices",₹200
+Spring Rolls,200,"Vegetables, Noodles, Pastry",₹250
+Chili Paneer,120,"Paneer, Bell Pepper, Soy Sauce",₹350
+Gobi Manchurian,140,"Cauliflower, Soy Sauce, Ginger",₹320
+Veg Noodles,180,"Noodles, Vegetables, Soy Sauce",₹280
+Chicken Noodles,160,"Noodles, Chicken, Soy Sauce",₹320
+Egg Fried Rice,190,"Rice, Egg, Vegetables",₹290
+Chicken Fried Rice,170,"Rice, Chicken, Vegetables",₹330
+Schezwan Fried Rice,150,"Rice, Vegetables, Schezwan Sauce",₹310
+Momos (Veg),220,"Flour, Vegetables, Spices",₹200
+Momos (Chicken),180,"Flour, Chicken, Spices",₹250
+Chilli Chicken,100,"Chicken, Bell Pepper, Soy Sauce",₹400
+Chicken 65,90,"Chicken, Yogurt, Spices",₹380
+Crispy Corn,170,"Corn, Flour, Spices",₹250
+Honey Chili Potato,160,"Potato, Honey, Chili Sauce",₹260
+Paneer Tikka,110,"Paneer, Yogurt, Spices",₹380
+Chicken Tikka Masala,90,"Chicken, Tomato, Cream",₹480
+Rogan Josh,70,"Lamb, Yogurt, Spices",₹650
+Malai Kofta,100,"Paneer, Cream, Nuts",₹400
+Chana Masala,180,"Chickpeas, Tomato, Spices",₹300
+Bhindi Masala,150,"Okra, Onion, Spices",₹270
+Baingan Bharta,130,"Eggplant, Tomato, Spices",₹290
+Jeera Rice,250,"Rice, Cumin, Ghee",₹150
+Plain Rice,300,"Rice, Water, Salt",₹100
+Paratha (Aloo),200,"Flour, Potato, Spices",₹120
+Paratha (Gobi),190,"Flour, Cauliflower, Spices",₹130
+Plain Curd,300,"Yogurt, Water, Salt",₹50
+Raita (Boondi),250,"Yogurt, Chickpea Flour, Spices",₹100
+Raita (Mix Veg),220,"Yogurt, Vegetables, Spices",₹120
+Papad,400,"Lentil Flour, Spices, Oil",₹50
+Green Salad,250,"Lettuce, Cucumber, Tomato",₹150

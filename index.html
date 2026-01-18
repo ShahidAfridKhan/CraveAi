@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAHID RESTRO - Modern Dining Experience</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="motion-background">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <!-- Casino Golden Sparkles -->
+        <div class="casino-sparkle-bg" id="casinoSparkles"></div>
+    </div>
+
+    <!-- Metro-style Sidebar -->
+    <div class="metro-sidebar" id="metroSidebar">
+        <div class="sidebar-header">
+            <h3>Quick Menu</h3>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <div class="sidebar-items" id="sidebarItems">
+                <!-- Items will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h1 class="logo-text">SHAHID RESTRO</h1>
+                    <div class="logo-subtitle">Modern Dining Experience</div>
+                </div>
+                <div class="header-actions">
+                    <button class="contact-btn glass-effect" onclick="openContactModal()">
+                        <i class="fas fa-phone"></i>
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="category-nav">
+            <div class="nav-content">
+                <button class="category-btn active glass-effect" data-category="all">
+                    <i class="fas fa-th-large"></i>
+                    All Items
+                </button>
+                <button class="category-btn glass-effect" data-category="chicken">
+                    <i class="fas fa-drumstick-bite"></i>
+                    Chicken
+                </button>
+                <button class="category-btn glass-effect" data-category="paneer">
+                    <i class="fas fa-leaf"></i>
+                    Paneer
+                </button>
+                <button class="category-btn glass-effect" data-category="mutton">
+                    <i class="fas fa-drumstick-bite"></i>
+                    Mutton
+                </button>
+                <button class="category-btn glass-effect" data-category="fish">
+                    <i class="fas fa-fish"></i>
+                    Fish
+                </button>
+                <button class="category-btn glass-effect" data-category="rice">
+                    <i class="fas fa-seedling"></i>
+                    Rice
+                </button>
+                <button class="category-btn glass-effect" data-category="breads">
+                    <i class="fas fa-bread-slice"></i>
+                    Breads
+                </button>
+                <button class="category-btn glass-effect" data-category="soups">
+                    <i class="fas fa-mug-hot"></i>
+                    Soups
+                </button>
+                <button class="category-btn glass-effect" data-category="beverages">
+                    <i class="fas fa-glass-whiskey"></i>
+                    Beverages
+                </button>
+                <button class="category-btn glass-effect" data-category="desserts">
+                    <i class="fas fa-ice-cream"></i>
+                    Desserts
+                </button>
+            </div>
+        </nav>
+
+        <div class="search-section">
+            <div class="search-container">
+                <div class="search-wrapper glass-effect">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search for dishes..." class="search-input">
+                </div>
+                <button class="refresh-btn glass-effect" onclick="refreshData()">
+                    <i class="fas fa-sync-alt"></i>
+                    Refresh
+                </button>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <div class="loading-spinner" id="loadingSpinner">
+                <div class="spinner"></div>
+                <p>Loading menu...</p>
+            </div>
+            
+            <div class="content-wrapper">
+                <div class="menu-section">
+                    <div class="menu-grid" id="menuGrid">
+                    </div>
+                </div>
+                
+                <!-- Rating and Scroll Board -->
+                <div class="rating-scroll-section">
+                    <div class="rating-card glass-effect">
+                        <div class="rating-header">
+                            <h3><i class="fas fa-star"></i> Customer Reviews</h3>
+                        </div>
+                        <div class="rating-content">
+                            <div class="overall-rating">
+                                <div class="rating-number">4.8</div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">Based on 1,247 reviews</div>
+                            </div>
+                            <div class="rating-breakdown">
+                                <div class="rating-bar">
+                                    <span>5★</span>
+                                    <div class="bar"><div class="fill" style="width: 75%"></div></div>
+                                    <span>75%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4★</span>
+                                    <div class="bar"><div class="fill" style="width: 20%"></div></div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3★</span>
+                                    <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                                    <span>3%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2★</span>
+                                    <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                    <span>1%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1★</span>
+                                    <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                    <span>1%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="scroll-board glass-effect">
+                        <div class="scroll-header">
+                            <h3><i class="fas fa-fire"></i> Popular Items</h3>
+                        </div>
+                        <div class="scroll-content" id="scrollBoard">
+                            <!-- Items will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SHAHID RESTRO</h3>
+                    <p>Where tradition meets innovation in every bite</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-user"></i> Owner: Shahid Afrid Khan</p>
+                    <p><i class="fas fa-phone"></i> +91 9392637051</p>
+                    <p><i class="fas fa-envelope"></i> shahidafridkhanphatan@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SHAHID RESTRO. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-title">
+                    <i class="fas fa-comments"></i>
+                    <span>SHAHID RESTRO Chat</span>
+                </div>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <i class="fas fa-robot"></i>
+                        <div class="message-text">
+                            Hello! I'm your AI assistant. How can I help you today? I can help you with:
+                            <br>• Menu recommendations
+                            <br>• Ordering assistance
+                            <br>• Restaurant information
+                            <br>• Special requests
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message..." maxlength="500">
+                <button id="chatbotSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="contactModal">
+        <div class="modal-content glass-effect">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <h4>Owner</h4>
+                        <p>Shahid Afrid Khan</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 9392637051</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>shahidafridkhanphatan@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Restaurant Street, Food City, FC 12345</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

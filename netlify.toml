@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+  command = ""
+
+[dev]
+  command = ""
+
+[build.environment]
+  NODE_VERSION = "18"

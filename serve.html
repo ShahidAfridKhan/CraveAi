@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAHID RESTRO - Local Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #ffd700;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .link {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #000;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+        .note {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(255, 193, 7, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 193, 7, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ SHAHID RESTRO</h1>
+        <p>Your restaurant website is ready! Choose how to access it:</p>
+        
+        <div class="links">
+            <a href="index.html" class="link">🏠 Open Website Locally</a>
+            <a href="http://localhost:8000" class="link">🌐 Open with Local Server</a>
+        </div>
+        
+        <div class="note">
+            <h3>📋 How to serve your website:</h3>
+            <p><strong>Option 1:</strong> Simply double-click on index.html</p>
+            <p><strong>Option 2:</strong> Run a local server:</p>
+            <code style="background: rgba(0,0,0,0.5); padding: 0.5rem; border-radius: 5px; display: block; margin: 0.5rem 0;">
+                # Python 3<br>
+                python -m http.server 8000<br><br>
+                # Node.js (if you have npx)<br>
+                npx serve .<br><br>
+                # PHP<br>
+                php -S localhost:8000
+            </code>
+            <p>Then open <strong>http://localhost:8000</strong> in your browser</p>
+        </div>
+        
+        <div class="note">
+            <h3>✨ Features Implemented:</h3>
+            <ul style="text-align: left; display: inline-block;">
+                <li>✅ Fixed chatbot with n8n webhook integration</li>
+                <li>✅ Added high-quality images for all menu items</li>
+                <li>✅ Token number input when adding items to cart</li>
+                <li>✅ Token number display on checkout page</li>
+                <li>✅ IoT SMS notification via n8n webhook</li>
+                <li>✅ Enhanced casino theme with golden sparkles</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
